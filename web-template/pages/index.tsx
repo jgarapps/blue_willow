@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 
-import stock_one from "@/assets/stock_1.jpg";
-import stock_two from "@/assets/stock_2.jpg";
-import stock_three from "@/assets/stock_3.jpg";
+import stockone from "../assets/stock_1.jpg";
+import stockthree from "../assets/stock_3.jpg";
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -20,13 +20,7 @@ export default function Home() {
         <div className="inner-content">
           <div className="column">
             {" "}
-            <img
-              className=""
-              width="300px"
-              height="250px"
-              alt="stock one"
-              src={`${stock_one}`}
-            />
+            <Image alt="stock one" src={stockone} width={300} height={250} />
           </div>
           <div className="column">
             <h1>Header one</h1>
@@ -37,20 +31,16 @@ export default function Home() {
         <div className="inner-content">
           <div className="column">
             <h1>Header two</h1>
-            <p>i like to eat.</p>
-            <button>
-              <img width="25px" height="25px" src="/assets/shark.png" />
-              shark up ahead
-            </button>
+            <p>beware of shark.</p>
           </div>
 
           <div className="column">
             {" "}
-            <img
-              className=""
-              width="300px"
-              height="250px"
-              src={"@/assets/stock_3.jpg"}
+            <Image
+              alt="stock two"
+              src={require("/assets/stock_2.jpg")}
+              width={300}
+              height={250}
             />
           </div>
         </div>
@@ -58,11 +48,11 @@ export default function Home() {
         <div className="inner-content row">
           <div className="column">
             {" "}
-            <img
-              width="300px"
-              height="250px"
+            <Image
               alt="stock three"
-              src={`${stock_three}`}
+              src={stockthree}
+              width={300}
+              height={250}
             />
           </div>
           <div className="column">
