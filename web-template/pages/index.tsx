@@ -1,12 +1,13 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 
 import stockone from "../assets/stock_1.jpg";
 import stockthree from "../assets/stock_3.jpg";
 import Image from "next/image";
-const inter = Inter({ subsets: ["latin"] });
+import ResuableModal from "../shared/components/modal";
+import { useState } from "react";
 
 export default function Home() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Head>
@@ -59,6 +60,19 @@ export default function Home() {
             <h1>Header three</h1>
             <p>Lorem ipsum dolor.</p>
           </div>
+        </div>
+      </section>
+      <section className="quote-content">
+        <div className="inner-quote-content">
+          <h1>Need a Quote? </h1>
+          <p>
+            Send us an message and we can schedule a time to get you a free
+            estimate!
+          </p>
+          <button onClick={() => setOpenModal(true)}>contact us</button>
+          {openModal && (
+            <ResuableModal setModalOpen={setOpenModal} openModal={openModal} />
+          )}
         </div>
       </section>
     </>
