@@ -5,6 +5,7 @@ import stockthree from "../assets/stock_3.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false);
@@ -29,22 +30,24 @@ export default function Home() {
           </div>
         </div>
         <hr />
-        <div className="inner-content">
-          <div className="column">
-            <h1>Header two</h1>
-            <p>beware of shark.</p>
-          </div>
+        <Link href={"/services"}>
+          <div className="inner-content">
+            <div className="column">
+              <h1>Header two</h1>
+              <p>beware of shark.</p>
+            </div>
 
-          <div className="column">
-            {" "}
-            <Image
-              alt="stock two"
-              src={require("/assets/stock_2.jpg")}
-              width={300}
-              height={250}
-            />
+            <div className="column">
+              {" "}
+              <Image
+                alt="stock two"
+                src={require("/assets/stock_2.jpg")}
+                width={300}
+                height={250}
+              />
+            </div>
           </div>
-        </div>
+        </Link>
         <hr />
         <div className="inner-content row">
           <div className="column">

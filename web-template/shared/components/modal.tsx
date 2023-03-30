@@ -7,24 +7,26 @@ interface modalProps {
 
 export default function resuableModal({ openModal, setModalOpen }: modalProps) {
   return (
-    <div className="modal">
-      <div>
-        <button onClick={() => setModalOpen(!openModal)}>X</button>
+    <div className="overlay">
+      <div className="modal">
+        <div className="closeModalRow">
+          <button onClick={() => setModalOpen(!openModal)}>X</button>
+        </div>
+        <form method="POST">
+          <label>
+            Full Name:
+            <input type="text" placeholder={"Full Name"} />
+          </label>
+          <label>
+            Email:
+            <input type="text" placeholder={"Email"} />
+          </label>
+          <label>
+            Message:
+            <textarea rows={4} placeholder={"Your Message"} />
+          </label>
+        </form>
       </div>
-      <form method="POST">
-        <label>
-          Name:
-          <input />
-        </label>
-        <label>
-          Email:
-          <input />
-        </label>
-        <label>
-          Message:
-          <textarea />
-        </label>
-      </form>
     </div>
   );
 }

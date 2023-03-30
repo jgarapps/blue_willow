@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "@/assets/logoipsum-287.svg";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,13 +10,7 @@ export default function Footer() {
         <li>some other info</li>
         <li>
           {" "}
-          <img
-            src={logo}
-            alt="logo"
-            width="100px"
-            height="175px"
-            className=""
-          />
+          <Image src={logo} alt="logo" width={100} height={175} className="" />
         </li>
       </ul>
     </footer>
