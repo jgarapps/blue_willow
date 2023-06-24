@@ -5,8 +5,10 @@ import stockthree from "../assets/stock_3.jpg";
 import stocktwo from "../assets/stock_2.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
-import { useState } from "react";
+
 import Link from "next/link";
+import { useCountdown } from "../useCountdown";
+import { useState } from "react";
 
 export const pages: any[] = [
   {
@@ -27,6 +29,42 @@ export const pages: any[] = [
 ];
 export default function Home() {
   const [openModal, setOpenModal] = useState(false);
+  const [days, hours, minutes, seconds] = useCountdown();
+
+  const DateTimeDisplay = ({ value, type }) => {
+    return (
+      <div>
+        {type}
+        <br />
+        {value}
+      </div>
+    );
+  };
+  const ShowCounter = ({ days, hours, minutes, seconds }) => {
+    return (
+      <div className="countDown">
+        <DateTimeDisplay type={"Days"} value={days} />
+
+        <DateTimeDisplay type={"Hours"} value={hours} />
+
+        <DateTimeDisplay type={"Minutes"} value={minutes} />
+
+        <DateTimeDisplay type={"Seconds"} value={seconds} />
+      </div>
+    );
+  };
+  const CountdownTimer = ({ targetDate }) => {
+    console.log(targetDate);
+    const [days, hours, minutes, seconds] = useCountdown(targetDate);
+    return (
+      <ShowCounter
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+      />
+    );
+  };
   return (
     <>
       <Head>
@@ -37,9 +75,12 @@ export default function Home() {
       </Head>
 
       <section className="content">
+        {" "}
+        <CountdownTimer targetDate={20230625} />
         {pages.map((page) => (
           <>
             <div className="inner-content">
+              {" "}
               <div className="column">
                 <Link href={`/${page.name}`}>
                   <Image
