@@ -3,19 +3,19 @@ import { useEffect, useState } from "react";
 const useCountdown = (targetDate) => {
   debugger;
   const countDownDate = new Date(targetDate);
-  const [countDown, setCountDown] = useState(countDownDate - new Date());
+  const [countDown, setCountDown] = useState(countDownDate);
 
   const getReturnValues = (countDown) => {
-    const days = Math.floor(countDown / 86400);
-    const hours = Math.floor((countDown / 3600) % 24);
-    const minutes = Math.floor((countDown / 60) % 60);
-    const seconds = Math.floor(countDown % 60);
+    const days = Math.floor((countDown / (1000 * 60 * 60 * 24)) % 1);
+    const seconds = Math.floor((countDown / 1000) % 60);
+    const minutes = Math.floor((countDown / 1000 / 60) % 60);
+    const hours = Math.floor((countDown / 1000 / 60 / 60) % 24);
     return [days, hours, minutes, seconds];
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCountDown(countDownDate - new Date());
+      setCountDown(new Date() - countDownDate);
     }, 1000);
     return () => clearInterval(interval);
   }, [countDownDate]);
