@@ -31,7 +31,9 @@ export default function service() {
         <div className="content">
           <h1>Our Happy Clients</h1> <div className="inner-content"></div>
         </div>
-      </section>
+      </section>        
+      {/* <aside>Things to do in {city.name}</aside> */}
+
     </>
   );
 }

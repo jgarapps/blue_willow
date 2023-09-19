@@ -51,14 +51,14 @@ body {
   max-width: 960px;
 }
 .content {
-  min-height: 80vh;
-  margin-top: 50px !important;
+  min-height: 50vh;
+  margin-top: 25px !important;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #eeeeee;
+  color: #000000;
   margin: auto;
   flex-direction: column;
   width: 100%;
@@ -137,7 +137,6 @@ body {
   height: 20px;
 }
 h1 {
-  font-size: 32px;
   color: #000000;
   text-transform: uppercase;
 }

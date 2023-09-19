@@ -32,6 +32,7 @@ export default function service() {
           <h1>Services</h1> <div className="inner-content"></div>
         </div>
       </section>
+      <aside></aside>
     </>
   );
 }
