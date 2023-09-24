@@ -3,7 +3,7 @@ import Head from "next/head";
 import state from "../assets/texasflag.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
-
+import { cityData } from "./api/dummydata";
 import Link from "next/link";
 // import { useCountdown } from "../useCountdown";
 import { useState } from "react";
@@ -57,11 +57,11 @@ export default function Home() {
 
       <section className="content">
         <div className="inner-content">
-          <div className="column">
+          <div className="column float-left">
             <h1>Texas</h1>
             <p>Welcome y'all!!</p>
           </div>
-          <div className="column">
+          <div className="column float-right">
             <Image
             alt="state"
             src={state}
@@ -70,27 +70,25 @@ export default function Home() {
             />
           </div>  
         </div>
-      </section>
+       </section> 
+     
       <aside className="content">
+      <table  id="cityData">
+        <thead style={{textAlign: "center"}}>Texas Cities</thead>
+          <tbody>
+          <tr>
+            <th>City</th>
+            <th>Population</th>
+            <th>Income</th>
+            </tr>
+            {cityData.map((x) => (<><tr><td style={{textTransform: "capitalize"}}>{x.name}</td><td>{x.population}</td><td>{x.avg_income}</td></tr></>))}
+            </tbody>
+            </table>
         <h2>What makes us great...</h2>
         <p>Became a state in 1845. Our state motto is friendship.</p>
         <p> Everything is bigger in texas with a whopping population of 27,469,114 people.</p>
         <p>We are home to the Alamo and birthplace to Dr. Pepper</p>
-
       </aside>
-      {/* <section className="quote-content">
-        <div className="inner-quote-content">
-          <h1>Need a Quote? </h1>
-          <p>
-            Send us an message and we can schedule a time to get you a free
-            estimate!
-          </p>
-          <button onClick={() => setOpenModal(true)}>contact us</button>
-          {openModal && (
-            <ResuableModal setModalOpen={setOpenModal} openModal={openModal} />
-          )}
-        </div>
-      </section> */}
     </>
   );
 }

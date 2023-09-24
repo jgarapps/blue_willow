@@ -80,6 +80,13 @@ body {
 .content span{
   text-transform: capitalize;
 }
+.float-left{
+
+  float: left;
+}
+.float-right{
+  float: right
+}
 .content img {
   height: 200px;
   width: 250px;
@@ -153,6 +160,7 @@ body {
   float: right;
   height: 20px;
 }
+
 h1 {
   color: #000000;
   text-transform: uppercase;
