@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { cityData } from "../api/dummydata";
 import Image from "next/image";
 
-export default function service() {
+export default function Service() {
   const router = useRouter()
   const city = router.asPath.replace("/", "").replace("%20", " ").replace("-", " ")
   const cityDetails = cityData.filter((x) => x.name === city); 
@@ -49,7 +49,7 @@ export default function service() {
         <div className="inner-content">  
         <ul>Sights to see:
           {cityDetails[0]?.sights.map((x) => 
-            <li>{x.name}</li>)}
+            <li key={x.name}>{x.name}</li>)}
             </ul>
         </div>          
         <h2>More details about this city</h2>

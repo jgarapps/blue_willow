@@ -59,7 +59,7 @@ export default function Home() {
         <div className="inner-content">
           <div className="column float-left">
             <h1>Texas</h1>
-            <p>Welcome y'all!!</p>
+            <p>Welcome y&apos;all!!</p>
           </div>
           <div className="column float-right">
             <Image
