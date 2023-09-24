@@ -15,44 +15,57 @@ body {
 .body {
   width: 100vw;
 }
-.header-inner-content {
+.nav-inner-content {
   display: flex;
-  width: 100%;
+  width: inherit;
   justify-content: space-between;
-  margin: 15px;
+  margin: 15px 0px;
 }
-.header-content {
-  background-color: burlywood;
+.nav-inner-content li {
+  text-transform: capitalize;
+}
+.nav-inner-content li:hover {
+  text-transform: uppercase;
+  background-color: #5b5e5c25;
+}
+.nav-content {
   height: 60px;
   border-bottom: 2px #000000;
   box-shadow: darkgrey;
-  position: absolute;
+  position: sticky;
   top: 0px;
-  width: 100% !important;
+  background-color: #ffffff;
+  z-index: 1;
+  margin: auto;
+  max-width: 1200px;
+  width: 95% !important;
   display: flex;
 }
-.quote-content {
-  color: #ffffff;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  background-color: #5b5e5c;
-}
-.inner-quote-content {
-  background-color: inherit;
-  display: inline-block;
-  flex-direction: row;
-  align-items: center;
+.header{
   width: 100%;
-  padding: 25px;
-  max-width: 960px;
+  height: 350px;
+}
+.header div{
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  top: 175px;
+  justify-content: center;
+}
+.header div h1{
+  margin: auto;
+  padding: 10px;
+  background-color: #5b5e5c25;
+
+}
+.set_bg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 .content {
-  min-height: 50vh;
-  margin-top: 25px !important;
+  min-height: 40vh;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -62,6 +75,10 @@ body {
   margin: auto;
   flex-direction: column;
   width: 100%;
+  max-width: 1200px;
+}
+.content span{
+  text-transform: capitalize;
 }
 .content img {
   height: 200px;

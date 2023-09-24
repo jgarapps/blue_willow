@@ -5,18 +5,9 @@ import Image from "next/image";
 
 export default function service() {
   const router = useRouter()
-  const city = router.asPath.replace("/", "").replace("%20", " ")
-  const cityDataAsArray = Object.keys(cityData).map((key) => {
-    const data = cityData[key];
-    const item ={
-      name: key,
-      data: data,
-    }
-    return item;
-  }); 
-  const cityDisplayed = cityDataAsArray.filter((x) => x.name = city)
-  console.log(cityDisplayed)
-  console.log(cityDataAsArray)
+  const city = router.asPath.replace("/", "").replace("%20", " ").replace("-", " ")
+  const cityDetails = cityData.filter((x) => x.name === city); 
+ 
   return (
     <>
       <Head>
@@ -43,29 +34,25 @@ export default function service() {
         ></link>
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <section>
+      <header className="header set_bg" style={{backgroundImage: `url(${cityDetails[0]?.image})`}}>
+        <div>
+          <h1>{cityDetails[0]?.name}</h1></div>
+        </header>
+      <section>    
         <div className="content">
-          
-          <h1>{city}</h1> 
-          <p>{cityDisplayed?.details}</p>
-         <div className="inner-content"> <ul>Sights to see:
-            <li>Place A</li>
-            <li>Place B</li>
-            <li>Place C</li>
-            <li>Place D</li>
-            </ul></div>
-          {/* <Image
-            alt="city landmark"
-            src={data.}
-            width={300}
-            height={250}
-            /> */}
+          <h2>Why we love <span>{city}</span></h2>
+          {cityDetails[0]?.isCapital ? <p>Texas Capital!</p>: null}
+          <p>{cityDetails[0]?.details}</p>    
         </div>
       </section>
       <aside className="content">
-        <div className="inner-content">
-          <h2>More details about this city</h2>
-        </div>
+        <div className="inner-content">  
+        <ul>Sights to see:
+          {cityDetails[0]?.sights.map((x) => 
+            <li>{x.name}</li>)}
+            </ul>
+        </div>          
+        <h2>More details about this city</h2>
       </aside>
     </>
   );

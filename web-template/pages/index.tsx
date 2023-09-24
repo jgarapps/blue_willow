@@ -1,9 +1,6 @@
 import Head from "next/head";
 
 import state from "../assets/texasflag.jpg";
-import stockone from "../assets/stock_1.jpg";
-import stockthree from "../assets/stock_3.jpg";
-import stocktwo from "../assets/stock_2.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
 
@@ -11,23 +8,6 @@ import Link from "next/link";
 // import { useCountdown } from "../useCountdown";
 import { useState } from "react";
 
-export const pages: any[] = [
-  {
-    name: "services",
-    photo: stockone,
-    snippet: "We offer a variety of services.",
-  },
-  {
-    name: "gallery",
-    photo: stockthree,
-    snippet: "Got ideas? Check out our previous projects",
-  },
-  {
-    name: "about us",
-    photo: stocktwo,
-    snippet: "Meet the team",
-  },
-];
 export default function Home() {
   const [openModal, setOpenModal] = useState(false);
   // const [days, hours, minutes, seconds] = useCountdown();
