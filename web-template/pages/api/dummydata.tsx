@@ -1,4 +1,4 @@
-import austinImg from "../../assets/austin.jpg"
+import vintageBG from "../../assets/vintage-BG.jpg"
 import dallasImg from "../../assets/dallas.jpg"
 import elpasoImg from "../../assets/el-paso-texas.jpg"
 import galvestonImg from "../../assets/Galveston-Island.jpg"
@@ -6,33 +6,24 @@ import houstonImg from "../../assets/houston.jpg"
 import sanantonioImg from "../../assets/san antonio.jpg"
 import wacoImg from "../../assets/waco.jpg"
 
-export const cities: any[] = [
+export const slugs: any[] = [
   {
-    link: "austin",
+    link: "Boudoir",
   },
   {
-    link: "dallas"
+    link: "Glam"
   },
   {
-    link: "el-paso"
+    link: "About Me"
   },
   {
-    link: "galveston"
-  },
-  {
-    link: "houston",
-  },
-  {
-    link: "san-antonio",
-  }, 
-  {
-    link: "waco",
+    link: "Inquire"
   },
 ];
 
-export const cityData = [
+export const slugData = [
   {
-    name: "austin",
+    name: "boudoir",
     population: "974,447",
     date_established: "1989",
     region: "hill country texas",
@@ -52,7 +43,7 @@ export const cityData = [
 
     ],
     more_details:"",
-    image: '../../assets/austin.jpgImg'
+    image: vintageBG
   },
   {
     name: "dallas",

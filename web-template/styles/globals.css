@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
 @font-face {
-  font-family: "ORCA-A";
-  src: url("../assets/fonts/OCR-A\ Regular.ttf"),
-    url("../assets/fonts/OCR-A\ Regular.ttf") format("truetype");
+  font-family: 'Yester Year';
+  src: url("../assets/fonts/Yesteryear-Regular.ttf"),
+    url("../assets/fonts/Yesteryear-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0px;
-  font-family: "ORCA-A";
+  font-family: 'Yester Year';
   display: flex;
+  font-size: large;
   letter-spacing: 0.5px;
 }
 .body {
   width: 100vw;
+}
+nav {
+  background-color: #F6c48E;
+  position: sticky;
+  top: 0px;
 }
 .nav-inner-content {
   display: flex;
@@ -32,9 +40,8 @@ body {
   height: 60px;
   border-bottom: 2px #000000;
   box-shadow: darkgrey;
-  position: sticky;
-  top: 0px;
-  background-color: #ffffff;
+  
+  background-color: #F6c48E;
   z-index: 1;
   margin: auto;
   max-width: 1200px;
@@ -44,6 +51,7 @@ body {
 .header{
   width: 100%;
   height: 350px;
+
 }
 .header div{
   height: 50px;

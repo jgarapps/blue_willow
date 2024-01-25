@@ -1,21 +1,22 @@
 import logo from "@/assets/texasflag.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import { cities } from "../../pages/api/dummydata";
+import { slugs } from "../../pages/api/dummydata";
 
 function Header() {
   return (
-    <nav className="nav-content">
+    <nav>
+      <div className="nav-content">
       <Link href={"/"}>
         <Image src={logo} width={50} height={50} alt="logo" className="" />
       </Link>
      <ul className="nav-inner-content">
-        {cities.map((city) => (
+        {slugs.map((slug) => (
           <li>
-            <Link href={`${city.link}`}>{city.link.replace("-", " ")}</Link>
+            <Link href={`${slug.link}`}>{slug.link.replace("-", " ")}</Link>
           </li>
         ))}
-      </ul>
+      </ul></div>
     </nav>
   );
 }
