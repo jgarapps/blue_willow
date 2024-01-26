@@ -14,6 +14,7 @@ body {
   display: flex;
   font-size: large;
   letter-spacing: 0.5px;
+  background-color: #E0D8C3;
 }
 .body {
   width: 100vw;
@@ -22,6 +23,7 @@ nav {
   background-color: #F6c48E;
   position: sticky;
   top: 0px;
+  z-index: 100;
 }
 .nav-inner-content {
   display: flex;
@@ -50,13 +52,16 @@ nav {
 }
 .header{
   width: 100%;
-  height: 350px;
+  max-width: 1200px;
+margin: auto;
+  height: 500px;
+  opacity: 60%;
 
 }
 .header div{
   height: 50px;
   width: 100%;
-  position: absolute;
+  position: relative;
   display: flex;
   top: 175px;
   justify-content: center;
@@ -74,7 +79,7 @@ nav {
 }
 .content {
   min-height: 40vh;
-  background-color: #ffffff;
+  background-color: #E0D8C3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +108,7 @@ nav {
   box-shadow: 0px 20px 20px #00000090;
 }
 .inner-content {
-  background-color: #ffffff;
+  background-color: #E0D8C3;
   display: inline-flex;
   align-items: center;
   width: 100%;

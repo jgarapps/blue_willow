@@ -8,42 +8,25 @@ import wacoImg from "../../assets/waco.jpg"
 
 export const slugs: any[] = [
   {
-    link: "Boudoir",
+    link: "boudoir",
   },
   {
-    link: "Glam"
+    link: "glam"
   },
   {
-    link: "About Me"
+    link: "about me"
   },
   {
-    link: "Inquire"
+    link: "inquire"
   },
 ];
 
 export const slugData = [
   {
     name: "boudoir",
-    population: "974,447",
-    date_established: "1989",
-    region: "hill country texas",
-    classification: "urban",
-    avg_income: "$78,000",
     details:"",
-    isCapital: true,
-    sights: [
-      {
-        name:"Capital building",
-        description: ""
-      },
-      {
-        name:"Lady bird lake",
-        description: ""
-      },
-
-    ],
     more_details:"",
-    image: vintageBG
+    image: vintageBG.src
   },
   {
     name: "dallas",

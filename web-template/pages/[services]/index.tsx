@@ -41,15 +41,12 @@ export default function Service() {
       <section>    
         <div className="content">
           <h2>Why we love <span>{slug}</span></h2>
-          {slugDatas[0]?.isCapital ? <p>Texas Capital!</p>: null}
-          <p>{slugDatas[0]?.details}</p>    
         </div>
       </section>
       <aside className="content">
         <div className="inner-content">  
         <ul>Sights to see:
-          {slugDatas[0]?.sights.map((x) => 
-            <li key={x.name}>{x.name}</li>)}
+         
             </ul>
         </div>          
         <h2>More details about this city</h2>
