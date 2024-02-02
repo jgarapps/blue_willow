@@ -1,10 +1,5 @@
 import vintageBG from "../../assets/vintage-BG.jpg"
-import dallasImg from "../../assets/dallas.jpg"
-import elpasoImg from "../../assets/el-paso-texas.jpg"
-import galvestonImg from "../../assets/Galveston-Island.jpg"
-import houstonImg from "../../assets/houston.jpg"
-import sanantonioImg from "../../assets/san antonio.jpg"
-import wacoImg from "../../assets/waco.jpg"
+
 
 export const slugs: any[] = [
   {
@@ -29,7 +24,7 @@ export const slugData = [
     image: vintageBG.src
   },
   {
-    name: "dallas",
+    name: "glam",
     population: "1,299,544",
     date_established: "1856",
     region: "north texas",
@@ -52,133 +47,25 @@ export const slugData = [
       },
     ],
     more_details:"",
-    image:dallasImg
+    image:""
   },
   {
-    name: "el paso",
-    population: "677,456",
-    date_established: "1873",
-    region: "west texas",
-    classification: "urban",
-    avg_income: "$51,000",
-    details:"Details about El Paso",
-    isCapital: false,
-    sights: [
-      {
-        name:"",
-        description: ""
-      },
-      {
-        name:"",
-        description: ""
-      },
-
-    ],
-    more_details:"",
-    image:elpasoImg
+    name: "about me",
+    details:"Hey there! My name is Bobbie and I’ve been doing photography since there was just film. I am a momma to two beautiful girls, a wife to a zany guy, and we have three insane dogs that are always trying to cuddle. My husband and I are both ridiculously big nerds with all things video games, movies, books and more. You’ll often find me in my free time going for nature walks looking for flowers or cool rocks, or even brewing a nice cup of tea or coffee to enjoy while chilling on the patio when it’s nice out. Women’s Empowerment has come to be my favorite category of photography mostly because of a few reasons. It showcases the strength, resilience, and diversity of women. Seeing images of empowered women can inspire and empower others. It can serve as a reminder that women are capable of achieving great things and can break barriers in various fields.",
+    more_details:"Above all my favorite part about what I do is often the reveal of the gallery. Showing women just how utterly strikingly beautiful inside and out they really are always gets to me….",
+    image:""
   },
   {
     name: "galveston",
-    population: "53,089",
-    date_established: "1939",
-    region: "gulf coast",
-    classification: "",
-    avg_income: "$42,000",
     details:"A city on an Island",
-    isCapital: false,
-    sights: [
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-    ],
     more_details:"",
-    image: galvestonImg
+    image: ""
   },
   {
     name:"houston",
-    population: "2,302,878",
-    date_established: "1837",
-    region: "gulf coast",
-    classification: "urban",
-    avg_income: "$57,000",
     details:"",
-    isCapital: false,
-    sights: [
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-      {
-      name:"",
-      description: ""
-      },
-    ],
     more_details:"",
-    image: houstonImg
+    image: ""
   },
-  {
-    name: "san antonio",
-    population: "1,472,909",
-    date_established: "1837",
-    region: "south texas",
-    classification: "urban",
-    avg_income: "$48,000",
-    details:"Home of the Alamo",
-    isCapital: false,
-    sights: [
-      {
-      name:"Alamo",
-      description: ""
-      }, {
-      name:"Tower of Americas",
-      description: ""
-      }, {
-      name:"",
-      description: "Six Flags Fiesta Texas"
-      }, {
-      name:"",
-      description: ""
-      }, 
-      {  
-      name:"",
-      description: ""
-      },
-    ],
-    more_details:"",
-    image: sanantonioImg, 
-  },
-  {
-    name: "waco",
-    population: "143,984",
-    date_established: "1856",
-    region: "central texas",
-    classification: "rural",
-    avg_income: "",
-    details:"Home of the Alamo",
-    isCapital: false,
-    sights: [
-      {
-      name:"Dr. Pepper Museum",
-      description: ""
-      }, {
-      name:"",
-      description: ""
-      }, 
-    ],
-    more_details:"",
-    image: wacoImg, 
-  }
+
 ]

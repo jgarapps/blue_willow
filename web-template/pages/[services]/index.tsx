@@ -7,7 +7,7 @@ export default function Service() {
   const router = useRouter()
   const slug = router.asPath.replace("/", "").replace("%20", " ").replace("-", " ")
   const slugDatas = slugData.filter((x) => x.name === slug); 
- 
+  const isAboutMe = slug == 'about me' ? true : false
   return (
     <>
       <Head>
@@ -40,17 +40,22 @@ export default function Service() {
         </header>
       <section>    
         <div className="content">
-          <h2>Why we love <span>{slug}</span></h2>
+      <h2> { !isAboutMe ? <span> Our</span> : null} {slug} {!isAboutMe ? <span>sessions</span>: null}</h2>
         </div>
       </section>
-      <aside className="content">
+     {isAboutMe ? <aside className="content">
         <div className="inner-content">  
-        <ul>Sights to see:
+        {slugDatas[0].details}
+        </div>          
+        <h2>Need more info? Contact us! </h2>
+      </aside> : <aside className="content">
+        <div className="inner-content">  
+        <ul>Photoshoots to see:
          
             </ul>
         </div>          
-        <h2>More details about this city</h2>
-      </aside>
+        <h2>Need more info? Contact us! </h2>
+      </aside>}
     </>
   );
 }

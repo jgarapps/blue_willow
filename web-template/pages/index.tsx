@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import state from "../assets/texasflag.jpg";
+// import state from "../assets/texasflag.jpg";
 import Image from "next/image";
 import ResuableModal from "../shared/components/modal";
 import { slugData } from "./api/dummydata";
@@ -61,14 +61,14 @@ export default function Home() {
             <h1>Blue Willow Imagery</h1>
             <p>Welcome y&apos;all!!</p>
           </div>
-          <div className="column float-right">
+          {/* <div className="column float-right">
             <Image
             alt="state"
             src={state}
             width={300}
             height={250}
             />
-          </div>  
+          </div>   */}
         </div>
        </section> 
      

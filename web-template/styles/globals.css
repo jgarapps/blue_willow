@@ -15,12 +15,15 @@ body {
   font-size: large;
   letter-spacing: 0.5px;
   background-color: #E0D8C3;
+  background-image: url("../assets/bw_background.jpg");
+  background-repeat: none;
+
 }
 .body {
   width: 100vw;
 }
 nav {
-  background-color: #F6c48E;
+  background-color: #F6c48E50;
   position: sticky;
   top: 0px;
   z-index: 100;
@@ -40,10 +43,10 @@ nav {
 }
 .nav-content {
   height: 60px;
-  border-bottom: 2px #000000;
+  border-bottom: 2px #ffffff;
   box-shadow: darkgrey;
   
-  background-color: #F6c48E;
+  background-color: #F6c48E50;
   z-index: 1;
   margin: auto;
   max-width: 1200px;
@@ -79,12 +82,12 @@ margin: auto;
 }
 .content {
   min-height: 40vh;
-  background-color: #E0D8C3;
+  background-color: #E0D8C350;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #000000;
+  color: #ffffff;
   margin: auto;
   flex-direction: column;
   width: 100%;
@@ -108,12 +111,12 @@ margin: auto;
   box-shadow: 0px 20px 20px #00000090;
 }
 .inner-content {
-  background-color: #E0D8C3;
+  background-color: #E0D8C350;
   display: inline-flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  color: #000000;
+  color: #ffffff;
   padding: 25px;
   flex-direction: row;
   max-width: 960px;
@@ -175,7 +178,7 @@ margin: auto;
 }
 
 h1 {
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
 }
 button {
