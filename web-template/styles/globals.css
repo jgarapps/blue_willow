@@ -14,7 +14,8 @@ body {
   display: flex;
   font-size: 32px;
   letter-spacing: 0.5px;
-  background-image: url("../assets/laceBG_2.jpg");
+  background-color: #000000;
+  /* background-image: url("../assets/laceBG_2.jpg"); */
   background-position: 0%;
   background-repeat: none;
 
@@ -26,9 +27,10 @@ body {
   width: 100vw;
 }
 nav {
-  /* background-color: #00000070; */
+  background-color: #ffffff75;
   position: sticky;
   top: 0px;
+  color: #ffffff;
   z-index: 100;
 }
 .nav-inner-content {
@@ -42,7 +44,6 @@ nav {
 }
 .nav-inner-content li:hover {
   text-transform: uppercase;
-  background-color: #5b5e5c25;
 }
 .nav-content {
   height: 60px;
@@ -58,8 +59,8 @@ nav {
 .header{
   width: 100%;
   max-width: 1200px;
-  margin: auto;
-  height: 500px;
+  margin: 0px auto ;
+  height: 400px;
   opacity: 60%;
 
 }
@@ -68,12 +69,12 @@ nav {
   width: 100%;
   position: relative;
   display: flex;
-  top: 175px;
+  top: 250px;
   justify-content: center;
 }
 .header div h1{
   margin: auto;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #5b5e5c25;
 
 }
@@ -83,8 +84,7 @@ nav {
   background-position: top center;
 }
 .content {
-  min-height: 40vh;
-  background-color: #ffffff50;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,23 +112,38 @@ background-repeat: none;
   float: right
 }
 .content img {
-  height: 200px;
-  width: 250px;
+  height: 225px;
+  width: 275px;
   margin: 25px;
   object-fit: cover;
+  transform: rotate(-20deg);
+  bottom: 0px;
+  right: 0px;
+  position: relative;
+  z-index: 1;
   box-shadow: 0px 20px 20px #00000090;
 }
+.content .imageWrapper {
+  height: 250px;
+  width: 300px;
+  margin: 25px;
+  transform: rotate(20deg);
+  background-color: #00000090;
+  position: inherit;
+  z-index: 0;
+}
+
 .inner-content {
-  /* background-color: #ffffff50; */
   display: inline-flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
+  background-color: #ffffff15;
   color: #ffffff;
   padding: 25px;
+  margin: 25px 0;
   flex-direction: row;
   max-width: 960px;
-  border-bottom: 2px solid #00000070;
 }
 .inner-content .column {
   display: flex;
@@ -137,13 +152,19 @@ background-repeat: none;
   text-align: left;
   width: 100%;
 }
-.inner-content:nth-child(even) {
+.content .inner-content:nth-child(even) {
   display: flex;
   flex-direction: row-reverse;
 }
-.inner-content:last-child {
-  border: none;
+.content .inner-content p {
+  width: 250px;
+  margin: auto;
+  text-align: left;
 }
+h2 {
+  text-transform: capitalize;
+}
+
 .inner-content p {
   text-align: left;
 }
