@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 @font-face {
-  font-family: 'Yester Year';
-  src: url("../assets/fonts/Yesteryear-Regular.ttf"),
-    url("../assets/fonts/Yesteryear-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Sage';
+  src: url("../assets/fonts/Sage.otf"),
+    url("../assets/fonts/Sage.otf") format("truetype");
+  font-weight: light;
   font-style: normal;
 }
 
 body {
   margin: 0px;
-  font-family: 'Yester Year';
+  font-family: 'Sage';
   display: flex;
-  font-size: large;
+  font-size: 32px;
   letter-spacing: 0.5px;
-  background-color: #E0D8C3;
-  background-image: url("../assets/bw_background.jpg");
+  background-image: url("../assets/laceBG_2.jpg");
+  background-position: 0%;
   background-repeat: none;
 
 }
+
 .body {
+  height: inherit;
+  background-color: #00000070;
   width: 100vw;
 }
 nav {
-  background-color: #F6c48E50;
+  /* background-color: #00000070; */
   position: sticky;
   top: 0px;
   z-index: 100;
@@ -44,9 +47,8 @@ nav {
 .nav-content {
   height: 60px;
   border-bottom: 2px #ffffff;
-  box-shadow: darkgrey;
-  
-  background-color: #F6c48E50;
+  box-shadow: darkgrey;  
+  /* background-color: #00000010; */
   z-index: 1;
   margin: auto;
   max-width: 1200px;
@@ -56,7 +58,7 @@ nav {
 .header{
   width: 100%;
   max-width: 1200px;
-margin: auto;
+  margin: auto;
   height: 500px;
   opacity: 60%;
 
@@ -82,7 +84,7 @@ margin: auto;
 }
 .content {
   min-height: 40vh;
-  background-color: #E0D8C350;
+  background-color: #ffffff50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,6 +94,12 @@ margin: auto;
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
+}
+.bg_home{
+background-image: url("../assets/BW_logo_large.jpg");
+height: inherit;
+background-size: auto;
+background-repeat: none;
 }
 .content span{
   text-transform: capitalize;
@@ -111,7 +119,7 @@ margin: auto;
   box-shadow: 0px 20px 20px #00000090;
 }
 .inner-content {
-  background-color: #E0D8C350;
+  /* background-color: #ffffff50; */
   display: inline-flex;
   align-items: center;
   width: 100%;

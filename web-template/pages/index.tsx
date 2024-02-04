@@ -55,11 +55,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="content">
-        <div className="inner-content">
+      <section className="content bg_home">
+        <div className="inner-content ">
           <div className="column float-left">
             <h1>Blue Willow Imagery</h1>
-            <p>Welcome y&apos;all!!</p>
+            {/* <p>Welcome y&apos;all!!</p> */}
           </div>
           {/* <div className="column float-right">
             <Image
@@ -70,10 +70,9 @@ export default function Home() {
             />
           </div>   */}
         </div>
-       </section> 
-     
-      <aside className="content">
-      <table  id="cityData">
+       
+
+      {/* <table  id="cityData">
         <thead style={{textAlign: "center"}}>Texas Cities</thead>
           <tbody>
           <tr>
@@ -83,12 +82,12 @@ export default function Home() {
             </tr>
             {slugData.map((x) => (<><tr><td style={{textTransform: "capitalize"}}>{x.name}</td><td>{x.population}</td><td>{x.avg_income}</td></tr></>))}
             </tbody>
-            </table>
-        <h2>What makes us great...</h2>
+            </table> */}
+        {/* <h2>What makes us great...</h2>
         <p>Became a state in 1845. Our state motto is friendship.</p>
         <p> Everything is bigger in texas with a whopping population of 27,469,114 people.</p>
-        <p>We are home to the Alamo and birthplace to Dr. Pepper</p>
-      </aside>
+        <p>We are home to the Alamo and birthplace to Dr. Pepper</p> */}
+   </section> 
     </>
   );
 }

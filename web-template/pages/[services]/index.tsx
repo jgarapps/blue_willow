@@ -50,7 +50,7 @@ export default function Service() {
         <h2>Need more info? Contact us! </h2>
       </aside> : <aside className="content">
         <div className="inner-content">  
-        <ul>Photoshoots to see:
+        <ul>Photos to see:
          
             </ul>
         </div>          
