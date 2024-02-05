@@ -1,11 +1,10 @@
 import Head from "next/head";
-
 import Image from "next/image";
-import ResuableModal from "../shared/components/modal";
 import Link from "next/link";
-import { useState } from "react";
+import { slugData } from "./api/dummydata";
 
 export default function Home() {
+  const slugDatas = slugData.filter((x) => x.name === "home"); 
 
   return (
     <>
@@ -16,39 +15,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="content bg_home">
-        <div className="inner-content ">
-          <div className="column float-left">
-            <h1>Blue Willow Imagery</h1>
-            {/* <p>Welcome y&apos;all!!</p> */}
-          </div>
-          {/* <div className="column float-right">
-            <Image
-            alt="state"
-            src={state}
-            width={300}
-            height={250}
-            /> */}
-          {/* </div>   */}
+      <section className="content">
+        <div className="inner-content bg_home ">
+          <div className="">
+            {/* <h1>Blue Willow Imagery</h1> */}
+          </div>     
         </div>
-       
-
-      {/* <table  id="cityData">
-        <thead style={{textAlign: "center"}}>Texas Cities</thead>
-          <tbody>
-          <tr>
-            <th>City</th>
-            <th>Population</th>
-            <th>Income</th>
-            </tr>
-            {slugData.map((x) => (<><tr><td style={{textTransform: "capitalize"}}>{x.name}</td><td>{x.population}</td><td>{x.avg_income}</td></tr></>))}
-            </tbody>
-            </table> */}
-        {/* <h2>What makes us great...</h2>
-        <p>Became a state in 1845. Our state motto is friendship.</p>
-        <p> Everything is bigger in texas with a whopping population of 27,469,114 people.</p>
-        <p>We are home to the Alamo and birthplace to Dr. Pepper</p> */}
-   </section> 
+        <aside className="inner-content">
+          <div className="column">
+            <ul>What we offer:
+              <li>Glamour Shots</li>
+              <li>Pin Up</li>
+              <li></li>
+            </ul>
+            <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." - Bobbie</p>
+          </div>
+        </aside>  
+      </section> 
     </>
   );
 }

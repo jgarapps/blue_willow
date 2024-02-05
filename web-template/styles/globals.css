@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 @font-face {
-  font-family: 'Sage';
-  src: url("../assets/fonts/Sage.otf"),
-    url("../assets/fonts/Sage.otf") format("truetype");
+  font-family: 'Limelight';
+  src: url("https://fonts.googleapis.com"),
+    format("truetype");
   font-weight: light;
   font-style: normal;
 }
 
 body {
+  font-family: 'Limelight';
+
   margin: 0px;
-  font-family: 'Sage';
+  /* font-family: 'Sage'; */
   display: flex;
   font-size: 32px;
   letter-spacing: 0.5px;
   background-color: #000000;
-  /* background-image: url("../assets/laceBG_2.jpg"); */
   background-position: 0%;
   background-repeat: none;
 
@@ -27,15 +28,23 @@ body {
   width: 100vw;
 }
 nav {
-  background-color: #ffffff75;
+  background-color: #000000;
   position: sticky;
   top: 0px;
-  color: #ffffff;
+  font-weight: bolder ;
   z-index: 100;
+}
+nav li {
+  background: #D4AF37;
+background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD89D 35%, #F2E8C5 48%, #FBF8EE 50%, #F2E8C5 52%, #EAD89D 65%, #E1C775 75%, #D8B74D 85%, #D4AF37 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-inner-content {
   display: flex;
   width: inherit;
+  align-items: center;
   justify-content: space-between;
   margin: 15px 0px;
 }
@@ -43,13 +52,12 @@ nav {
   text-transform: capitalize;
 }
 .nav-inner-content li:hover {
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 .nav-content {
   height: 60px;
   border-bottom: 2px #ffffff;
   box-shadow: darkgrey;  
-  /* background-color: #00000010; */
   z-index: 1;
   margin: auto;
   max-width: 1200px;
@@ -96,10 +104,9 @@ nav {
   max-width: 1200px;
 }
 .bg_home{
-background-image: url("../assets/BW_logo_large.jpg");
+background-image: url("../assets/logo/BW-logo.jpg");
 height: inherit;
-background-size: auto;
-background-repeat: none;
+background-repeat: no-repeat;
 }
 .content span{
   text-transform: capitalize;
@@ -113,8 +120,8 @@ background-repeat: none;
 }
 .content img {
   height: 225px;
-  width: 275px;
-  margin: 25px;
+  width: 250px;
+  margin: 25px 0px;
   object-fit: cover;
   transform: rotate(-20deg);
   bottom: 0px;
@@ -138,12 +145,12 @@ background-repeat: none;
   align-items: center;
   width: 80%;
   justify-content: space-between;
-  background-color: #ffffff15;
+  background-color: #ffffff30;
   color: #ffffff;
   padding: 25px;
   margin: 25px 0;
   flex-direction: row;
-  max-width: 960px;
+  /* max-width: 960px; */
 }
 .inner-content .column {
   display: flex;
@@ -157,9 +164,11 @@ background-repeat: none;
   flex-direction: row-reverse;
 }
 .content .inner-content p {
-  width: 250px;
+  width: 90%;
   margin: auto;
+  text-transform: none;
   text-align: left;
+  padding: 5px;
 }
 h2 {
   text-transform: capitalize;
