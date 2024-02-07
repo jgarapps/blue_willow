@@ -103,10 +103,14 @@ background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
-  margin: auto;
+  margin: 50px auto;
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
+}
+.column{
+  display: flex;
+  padding: 0px 60px;
 }
 .bg_home{
 background-image: url("../assets/logo/BW-logo.jpg");
@@ -157,13 +161,54 @@ background-repeat: no-repeat;
   flex-direction: row;
   /* max-width: 960px; */
 }
-.inner-content .column {
+
+/* about */
+.about-inner-content {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  background-color: #ffffff30;
+  color: #ffffff;
+  padding: 25px;
+  margin: 25px 0;
+  flex-direction: row;
+  /* max-width: 960px; */
+}
+
+
+.faq-content .row {
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+/* faqs accordion */
+
+.faq-content .row .accordion {
+  margin: 25px;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  padding: 15px;
+  border: none;
+  color: #ccc;
+  background: #ffffff50;
+  outline: none;
+  cursor: pointer;
+  display: grid;
+}
+
+.faq-content .row .active, .accordion h3:hover {
+text-decoration: underline;
+}
+
+/* .inner-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
   width: 100%;
-}
+} */
 .content .inner-content:nth-child(even) {
   display: flex;
   flex-direction: row-reverse;
@@ -280,3 +325,5 @@ textarea {
 li {
   list-style: none;
 }
+
+

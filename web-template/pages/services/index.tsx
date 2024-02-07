@@ -15,27 +15,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="content ">
-        <div className="inner-content ">
-          <div className="column">
-            {/* <h1>Blue Willow Imagery</h1> */}
-          </div>
-
-       
-        <aside className="column"> {slugData[0]?.images.map((x) => 
-        (<>
-        <Link href={`/services/${x?.link}`}><p>{x?.blurb}</p></Link>
-        <div className="inner-content">
-
-          <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} /></div>
-          
-        </div>
-        </>       
-         ))}   
-         </aside>        
-      </div>
-
-   </section> 
+      <section className="content ">  
+        {slugData[0]?.images.map((x) => ( 
+          <div className="inner-content ">
+            <div className="column">
+            <Link href={`/services/${x?.link}`}><h2>{x?.blurb}</h2></Link>
+            </div>
+            <div className="column">
+              <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} />
+              </div>
+            </div>
+          </div>        
+        ))}   
+      </section> 
     </>
   );
 }

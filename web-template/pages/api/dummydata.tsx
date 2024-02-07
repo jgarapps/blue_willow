@@ -26,9 +26,9 @@ import alt4 from "../../assets/alternative/alt4.jpg"
 import alt5 from "../../assets/alternative/Image-alt5.jpg"
 
 // about us
-import bobbieImg from "../../assets/aboutus/JawishFamily20.jpg"
+import familyImg from "../../assets/aboutus/JawishFamily20.jpg"
 import achaishaImg from"../../assets/aboutus/gildedglamour.jpg"
-
+import bobbieImg from "../../assets/aboutus/bobbie_headshot.jpg"
 
 export const slugs: any[] = [
   {
@@ -36,7 +36,7 @@ export const slugs: any[] = [
   },
   
   {
-    link: "about us"
+    link: "about"
   },
   {
     link: "contact"
@@ -203,7 +203,7 @@ export const about_us = [
   details:"Hey there! My name is Bobbie and I’ve been doing photography since there was just film. I am a momma to two beautiful girls, a wife to a zany guy, and we have three insane dogs that are always trying to cuddle. My husband and I are both ridiculously big nerds with all things video games, movies, books and more. ",
   more_details1: "You’ll often find me in my free time going for nature walks looking for flowers or cool rocks, or even brewing a nice cup of tea or coffee to enjoy while chilling on the patio when it’s nice out. Women’s Empowerment has come to be my favorite category of photography mostly because of a few reasons. It showcases the strength, resilience, and diversity of women. Seeing images of empowered women can inspire and empower others. It can serve as a reminder that women are capable of achieving great things and can break barriers in various fields.",
   more_details2:"Above all my favorite part about what I do is often the reveal of the gallery. Showing women just how utterly strikingly beautiful inside and out they really are always gets to me….",
-  image: vintageBG.src,
+  image: familyImg.src,
   images: [
     { 
       image_2: image1.src,
@@ -218,6 +218,34 @@ export const about_us = [
       blurb: ""
     }
   ] 
+}
+]
+
+export const faqs = [
+ { image: vintageBG.src,
+ questions: [ {
+    question: "What are the prices?",
+    answer: "The answer"
+  },
+  {
+    question: "What can I expect?",
+    answer: "The answer"
+  },
+  {
+    question: "What should i bring?",
+    answer: "The answer"
+  },
+  {
+    question: "Who can do my hair?",
+    answer: "The answer"
+    
+  },
+  {
+    question: "I'm not sure what I want.",
+    answer: "The answer"
+    
+  },
+ ]
 }
 ]
 

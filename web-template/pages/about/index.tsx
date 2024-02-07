@@ -40,7 +40,7 @@ export default function Service() {
         <div className="content">
           <h2>Blue Willow Imagery</h2>
           <h3>Meet Bobbie</h3>
-          <div className="inner-content">
+          <div className="about-inner-content">
             <span><p>{about_us[0].details}</p>
             <p>{about_us[0].more_details1}</p>
             <p>{about_us[0].more_details2}</p></span>
@@ -50,7 +50,7 @@ export default function Service() {
         <div className="content">
           <h2>Gilded Glamour</h2>
           <h3>Meet Achaisha</h3>
-          <div className="inner-content"><div className="imageWrapper"><Image src={about_us[0].achaisha} alt={"Photo of Bobbie and family"}/></div></div>
+          <div className="about-inner-content"><div className="imageWrapper"><Image src={about_us[0].achaisha} alt={"Photo of Bobbie and family"}/></div></div>
 
         </div>
       </section>
