@@ -9,12 +9,12 @@ function Header() {
     <nav>
       <div className="nav-content">
       <Link href={"/"}>
-        <Image src={logo} width={50} height={50} alt="logo" className="" />
+        <Image src={logo} width={60} height={50} alt="logo" className="header_logo" />
       </Link>
      <ul className="nav-inner-content">
         {slugs.map((slug) => (
           <li>
-            <Link href={`${slug.link}`}>{slug.link.replace("-", " ")}</Link>
+            <Link href={`/${slug.link}`}>{slug.link.replace("-", " ")}</Link>
           </li>
         ))}
       </ul></div>

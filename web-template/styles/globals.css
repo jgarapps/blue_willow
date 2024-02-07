@@ -27,6 +27,11 @@ body {
   background-color: #00000070;
   width: 100vw;
 }
+.header_logo{
+  position: relative;
+  top: 5px;
+  right: 25%;
+}
 nav {
   background-color: #000000;
   position: sticky;
@@ -119,12 +124,12 @@ background-repeat: no-repeat;
   float: right
 }
 .content img {
-  height: 225px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
   margin: 25px 0px;
   object-fit: cover;
   transform: rotate(-20deg);
-  bottom: 0px;
+  bottom: 15px;
   right: 0px;
   position: relative;
   z-index: 1;

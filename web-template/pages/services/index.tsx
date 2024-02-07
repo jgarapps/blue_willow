@@ -17,21 +17,24 @@ export default function Home() {
 
       <section className="content ">
         <div className="inner-content ">
-          <div className="column bg_home">
+          <div className="column">
             {/* <h1>Blue Willow Imagery</h1> */}
           </div>
 
        
-        <aside className="column">
-         {slugData[0]?.images.map((x) => (  <div className="inner-content"> 
+        <aside className="column"> {slugData[0]?.images.map((x) => 
+        (<>
+        <Link href={`/services/${x?.link}`}><p>{x?.blurb}</p></Link>
+        <div className="inner-content">
 
-          <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} /></div><Link href={`services/${x.link}`}><p>{x?.blurb}</p>
-          </Link>
-
-          </div>  ))}        
+          <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} /></div>
           
-        </aside>        
         </div>
+        </>       
+         ))}   
+         </aside>        
+      </div>
+
    </section> 
     </>
   );

@@ -15,18 +15,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="content">
-        <div className="inner-content bg_home ">
-          <div className="">
+      <section className="content bg_home"><div className="inner-content ">
+          
             {/* <h1>Blue Willow Imagery</h1> */}
-          </div>     
+           
         </div>
         <aside className="inner-content">
           <div className="column">
             <ul>What we offer:
               <li>Glamour Shots</li>
               <li>Pin Up</li>
-              <li></li>
+              <li>Boudoir</li>
+              <li>Alt - Have something else in mind?</li>
             </ul>
             <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." - Bobbie</p>
           </div>

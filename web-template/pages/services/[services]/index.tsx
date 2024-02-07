@@ -41,27 +41,18 @@ export default function Service() {
           <h1>{slugDatas[0]?.name}</h1></div>
         </header>
       <section>    
-        <div className="content">
+        {/* <div className="content">
       <h2>{slug} {!notServices ? <span>sessions</span>: null}</h2>
-        </div>
+        </div> */}
       </section>
-     {notServices ? 
-        <aside className="content">
-          <div className="inner-content">  
-            <p>{slugDatas[0]?.details}</p>
-            <p>{slugDatas[0]?.more_details1}</p>
-            <p>{slugDatas[0]?.more_details2}</p>
-          </div>          
-          <h2>Need more info? Contact us! </h2>
-        </aside> : 
+     
         <aside className="content">
          {slugDatas[0]?.images.map((x) => (  <div className="inner-content">  
           <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} /></div><p>{x?.blurb}</p>
           
-          </div>  ))}        
-          <h2>Ready to book? <Link href={""}>Contact us! </Link></h2>
+          </div>))}         
         </aside>
-      }
+      
     </>
   );
 }

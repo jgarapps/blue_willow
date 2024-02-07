@@ -4,6 +4,7 @@ import image1 from "../../assets/candle_img.webp"
 import boudoir1 from "../../assets/boudoir/boudoir1.jpg"
 import boudoir2 from "../../assets/boudoir/boudoir2.jpg"
 import boudoir3 from "../../assets/boudoir/boudoir3.jpg"
+
 // glamour
 import glam1 from "../../assets/glam/glam1.jpg"
 import glam2 from "../../assets/glam/glam2.jpg"
@@ -13,9 +14,22 @@ import glam5 from "../../assets/glam/glam5.jpg"
 import glam6 from "../../assets/glam/glam6.jpg"
 import glam7 from "../../assets/glam/glam7.jpg"
 
+// pinup
+import pinup1 from "../../assets/pinup/pinup1.jpg"
+import pinup2 from "../../assets/pinup/pinup2.jpg"
+
+// alternative 
+import alt1 from "../../assets/alternative/alt1.jpg"
+import alt2 from "../../assets/alternative/alt2.jpg"
+import alt3 from "../../assets/alternative/alt3.jpg"
+import alt4 from "../../assets/alternative/alt4.jpg"
+import alt5 from "../../assets/alternative/Image-alt5.jpg"
+
 // about us
 import bobbieImg from "../../assets/aboutus/JawishFamily20.jpg"
 import achaishaImg from"../../assets/aboutus/gildedglamour.jpg"
+
+
 export const slugs: any[] = [
   {
     link: "services",
@@ -40,25 +54,25 @@ export const slugData = [
     image: vintageBG.src,
     images: [
       { 
-        image: boudoir1.src,
+        image: pinup1.src,
         blurb: "Pin Up Sessions",
         link: "pin up",
         
       },
       { 
-        image: boudoir1.src,
+        image: boudoir3.src,
         blurb: "Boudoir Sessions",
         link: "boudoir",
 
       },
       {    
-        image: glam1.src,
+        image: alt4.src,
         blurb: "Alternative",
         link: "alternative",
 
       },
       {    
-        image: image1.src,
+        image: glam2.src,
         blurb: "Glam",
         link: "glam",
 
@@ -126,9 +140,25 @@ export const slugData = [
         blurb: "",
       },
       {    
-        image: image1.src,
+        image: glam3.src,
         blurb: ""
-      }
+      },
+      {    
+        image: glam4.src,
+        blurb: ""
+      },
+      {    
+        image: glam5.src,
+        blurb: ""
+      },
+      {    
+        image: glam6.src,
+        blurb: ""
+      },
+      {    
+        image: glam7.src,
+        blurb: ""
+      },
     ] 
    
   
@@ -140,15 +170,23 @@ export const slugData = [
     image: vintageBG.src,
     images: [
       { 
-        image: glam1.src,
+        image: alt1.src,
         blurb: "",
       },
       {    
-        image: glam2.src,
+        image: alt2.src,
         blurb: "",
       },
       {    
-        image: image1.src,
+        image: alt3.src,
+        blurb: ""
+      },
+      {    
+        image: alt4.src,
+        blurb: ""
+      },
+      {    
+        image: alt5.src,
         blurb: ""
       }
     ] 
