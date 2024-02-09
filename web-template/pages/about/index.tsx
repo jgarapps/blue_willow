@@ -50,8 +50,14 @@ export default function Service() {
         <div className="content">
           <h2>Gilded Glamour</h2>
           <h3>Meet Achaisha</h3>
-          <div className="about-inner-content"><div className="imageWrapper"><Image src={about_us[0].achaisha} alt={"Photo of Bobbie and family"}/></div></div>
-
+          
+          <div className="about-inner-content">
+          <span>
+            <p><Link href={"https://www.gildedglamourtx.com"}>www.gildedglamourtx.com</Link></p>
+            <p>Hair and Makeup Services. Specializing in the glamorous looks of the golden era. Pinup and vintage hairstyling and makeup is her specialty with a twist of modern! </p>
+            <p>She has a wide variety of styling skills from vintage, traditional and bridal to extreme themed styles. She also specializes in wig styling and can be commissioned to create a styled wig for a specific look to your theme.</p>
+          </span>
+          <div className="imageWrapper"><Image src={about_us[0].achaisha} alt={"Photo of Bobbie and family"}/></div></div>
         </div>
       </section>
      

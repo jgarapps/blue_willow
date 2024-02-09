@@ -91,11 +91,28 @@ background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD
   background-color: #5b5e5c25;
 
 }
+.home_bg{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 .set_bg{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
+.faq-content{ min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  margin: 50px auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
 .content {
   min-height: 30vh;
   display: flex;
@@ -111,6 +128,7 @@ background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD
 .column{
   display: flex;
   padding: 0px 60px;
+  margin: 25px 0px;
 }
 .bg_home{
 background-image: url("../assets/logo/BW-logo.jpg");
@@ -118,7 +136,7 @@ height: inherit;
 background-repeat: no-repeat;
 }
 .content span{
-  text-transform: capitalize;
+margin: 0 40px
 }
 .float-left{
 
@@ -148,7 +166,17 @@ background-repeat: no-repeat;
   position: inherit;
   z-index: 0;
 }
-
+.home-inner-content {
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  background-color: #ffffff30;
+  color: #ffffff;
+  padding: 25px;
+  margin: 25px 0;
+  flex-direction: row;
+  /* max-width: 960px; */
+}
 .inner-content {
   display: inline-flex;
   align-items: center;
@@ -161,7 +189,19 @@ background-repeat: no-repeat;
   flex-direction: row;
   /* max-width: 960px; */
 }
-
+.home-inner-content ul  {
+  width: 275px;
+}
+.home-inner-content ul li {
+  margin-left: 30px;
+  list-style: disc;
+}
+.home-inner-content p {
+  margin-left: auto;
+  text-align: end;
+  display: block;
+  width: 40%;
+}
 /* about */
 .about-inner-content {
   display: inline-flex;

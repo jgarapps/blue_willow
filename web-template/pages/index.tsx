@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { slugData } from "./api/dummydata";
+import bobbieImg from "../assets/aboutus/bobbie_headshot.jpg"
+
+// import { home } from "./api/dummydata";
+import homehero from "../assets/logo/BW-logo.jpg"
 
 export default function Home() {
-  const slugDatas = slugData.filter((x) => x.name === "home"); 
+  // const slugDatas = slugData.filter((x) => x.name === "home"); 
 
   return (
     <>
@@ -14,13 +17,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <section className="content bg_home"><div className="inner-content ">
-          
-            {/* <h1>Blue Willow Imagery</h1> */}
-           
-        </div>
-        <aside className="inner-content">
+      <header className="header home_bg" style={{backgroundImage: `url(${homehero.src})`}}>
+       
+        </header>
+      <section className="content">
+        <div className="home-inner-content">
           <div className="column">
             <ul>What we offer:
               <li>Glamour Shots</li>
@@ -28,9 +29,9 @@ export default function Home() {
               <li>Boudoir</li>
               <li>Alt - Have something else in mind?</li>
             </ul>
-            <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." - Bobbie</p>
-          </div>
-        </aside>  
+           <div className="imageWrapper"> <Image src={bobbieImg} height={150} width={150} alt={"bobbie"} /></div>
+           </div> <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." <br/>- Bobbie</p>
+        </div> 
       </section> 
     </>
   );
