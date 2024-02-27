@@ -19,7 +19,7 @@ export default function Home() {
         {slugData[0]?.images.map((x) => ( 
           <div className="inner-content ">
             <div className="column">
-            <Link href={`/services/${x?.link}`}><h2>{x?.blurb}</h2></Link>
+            <Link href={`/portfolios/${x?.link}`}><h2>{x?.blurb}</h2></Link>
             </div>
             <div className="column">
               <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} />

@@ -1,11 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import Link from "next/link";
-import AliceCarousel from "react-alice-carousel";
 import vintageBG from "../../assets/vintage-BG.jpg"
-import lifeStylePricing from "../../assets/pricing/Lifestyle Pricing.jpg"
-import pricingGuide from "../../assets/pricing/Pricing Guide .jpg"
 export default function Service() {
   return (
     <>
@@ -40,10 +34,25 @@ export default function Service() {
     
         <aside className="content">
         <div className="pricing-inner-content">  
-          <Image src={lifeStylePricing} height={500
-          } width={275} alt={"Photo example from a boudoir shoot"} />
-            <Image src={pricingGuide} height={500
-          } width={275} alt={"Photo example from a boudoir shoot"} /></div>
+         <h1>Lifestyle/Branding</h1>
+         <p>50% non-refundable deposit due upon booking.</p>
+         <ul>
+          <li>Come Photo Ready</li>
+          <li>Studio</li>
+          <li></li>
+         </ul>
+
+        </div>
+        <div className="pricing-inner-content">  
+         <h1>Collections</h1>
+         <p>Full day shoots.</p>
+         <ul>
+          <li>$500 session fee</li>
+          <li>Optional Hair/Makeup ($200 more)</li>
+          <li></li>
+         </ul>
+
+        </div>
           
                 
         </aside>

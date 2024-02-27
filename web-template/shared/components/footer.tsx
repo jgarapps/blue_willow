@@ -8,12 +8,15 @@ export default function Footer() {
     <footer className="footer-content">
       <ul className="footer-inner-content">
          <li>Ready to book? <Link href={""}>Contact us! </Link></li>
-        <li>contact us</li>
-        <li>some other info</li>
+                  <Link href="#" className="fa fa-instagram"></Link>
+                  <Link href="#" className="fa fa-facebook"></Link>
+          <Link href="#" className="fa fa-youtube"></Link>
+          <Link href="#" className="fa-brands fa-tiktok"></Link>
         <li>
           {" "}
           <Image src={logo} alt="logo" width={100} height={75} className="" />
         </li> 
+        
       </ul>
     
     </footer>

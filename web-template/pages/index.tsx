@@ -17,12 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="header home_bg" style={{backgroundImage: `url(${homehero.src})`}}>
+      {/* <header className="header home_bg" style={{backgroundImage: `url(${homehero.src})`}}>
        
-        </header>
+        </header> */}
       <section className="content">
         <div className="home-inner-content">
-          <div className="column">
+          <div> San Antonio based women's empowerement photography</div>
+          <div>Some other text. Will add some more text here. This is just a placeholder.</div>
+          {/* <div className="column">
             <ul>What we offer:
               <li>Glamour Shots</li>
               <li>Pin Up</li>
@@ -30,7 +32,8 @@ export default function Home() {
               <li>Alt - Have something else in mind?</li>
             </ul>
            <div className="imageWrapper"> <Image src={bobbieImg} height={150} width={150} alt={"bobbie"} /></div>
-           </div> <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." <br/>- Bobbie</p>
+           </div> */}
+            {/* <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." <br/>- Bobbie</p> */}
         </div> 
       </section> 
     </>

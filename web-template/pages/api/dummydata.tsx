@@ -32,7 +32,7 @@ import bobbieImg from "../../assets/aboutus/bobbie_headshot.jpg"
 
 export const slugs: any[] = [
   {
-    link: "portfolio",
+    link: "portfolios",
   },
   
   {
@@ -45,7 +45,7 @@ export const slugs: any[] = [
 
 export const slugData = [
   {  
-    name: "services",
+    name: "portfolios",
     details:"",
     more_details:"",
     image: vintageBG.src,

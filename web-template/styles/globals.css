@@ -10,7 +10,6 @@
 
 body {
   font-family: 'Limelight';
-
   margin: 0px;
   /* font-family: 'Sage'; */
   display: flex;
@@ -39,9 +38,13 @@ nav {
   font-weight: bolder ;
   z-index: 100;
 }
+.fa-facebook, .fa-instagram, .fa-youtube{
+  color: #ffffff;
+  padding: 20px;
+}
 nav li {
   background: #D4AF37;
-background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD89D 40%, #F2E8C5 42%, #FBF8EE 42%, #F2E8C5 50%, #EAD89D 65%, #E1C775 75%, #D8B74D 85%, #D4AF37 100%);
+background: linear-gradient(to right, #D4AF37 0%, #D8B74D 25%, #E1C775 35%, #EAD89D 45%, #EAD89D 55%, #E1C775 56%, #D8B74D 75%, #D4AF37 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -150,7 +153,7 @@ margin: 0 40px
   width: 300px;
   margin: 25px 0px;
   object-fit: cover;
-  transform: rotate(-20deg);
+
   bottom: 15px;
   right: 0px;
   position: relative;
@@ -162,22 +165,14 @@ margin: 0 40px
   width: 500px;
   margin: 25px ;
   object-fit: cover;
-  transform: rotate(0deg);
+
   bottom: 0px;
   right: 0px;
   position: relative;
   z-index: 1;
   box-shadow: 0px 20px 20px #00000090;
 }
-.content .imageWrapper {
-  height: 250px;
-  width: 300px;
-  margin: 25px;
-  transform: rotate(20deg);
-  background-color: #00000090;
-  position: inherit;
-  z-index: 0;
-}
+
 .home-inner-content {
   align-items: center;
   width: 80%;
@@ -210,7 +205,7 @@ margin: 0 40px
   color: #ffffff;
   padding: 25px;
   margin: 25px 0;
-  flex-direction: row;
+  flex-direction: column;
   /* max-width: 960px; */
 }
 .home-inner-content ul  {

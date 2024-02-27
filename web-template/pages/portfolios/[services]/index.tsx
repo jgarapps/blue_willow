@@ -4,13 +4,22 @@ import { slugData } from "../../api/dummydata";
 import Image from "next/image";
 import Link from "next/link";
 import AliceCarousel from "react-alice-carousel";
+import ImageGallery from "react-image-gallery"
+
 
 export default function Service() {
   const router = useRouter()
   const slugs = router.asPath.split('/')
   const slug = slugs?.pop().replace("/", "").replace("%20", " ").replace("-", " ")
   const slugDatas = slugData.filter((x) => x.name === slug); 
-  const notServices = slug == 'about me' ? true : false
+
+  const items =[ <div>{ slugDatas[0]?.images.map((x) => <img src={x.image} width={300} alt={""} role="presentation" />)}</div>]
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+    1480: { items: 4 }
+  };
   return (
     <>
       <Head>
@@ -39,24 +48,21 @@ export default function Service() {
       </Head>
       <header className="header set_bg" style={{backgroundImage: `url(${slugDatas[0]?.image})`}}>
         <div>
-          <h1>{slugDatas[0]?.name}</h1></div>
-        </header>
-      {/* <section className="content">
-      
-      <AliceCarousel
-        mouseTracking
-        items={slugDatas[0]?.images.map((x) => (x.image))}
-        autoWidth={true}
-        disableDotsControls={true}
-        keyboardNavigation={true}
-      /></section> */}
-        <aside className="content">
-         {slugDatas[0]?.images.map((x) => (  <div className="inner-content">  
-          <div className="imageWrapper"><Image src={x.image} height={225} width={275} alt={"Photo example from a boudoir shoot"} /></div><p>{x?.blurb}</p>
+          <h1>{slugDatas[0]?.name}</h1>
+        </div>
+      </header>
+      <section className="content">
+        {/* <AliceCarousel
+           mouseTracking
+           items={items}
+           autoWidth={true}
+           disableDotsControls={true}
+           keyboardNavigation={true}
+           responsive={responsive}
           
-          </div>))}         
-        </aside>
-     
+        /> */}
+        <ImageGallery items={pictures} />
+      </section>
     </>
   );
 }
