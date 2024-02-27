@@ -41,7 +41,7 @@ nav {
 }
 nav li {
   background: #D4AF37;
-background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD89D 35%, #F2E8C5 48%, #FBF8EE 50%, #F2E8C5 52%, #EAD89D 65%, #E1C775 75%, #D8B74D 85%, #D4AF37 100%);
+background: linear-gradient(to right, #D4AF37 0%, #D8B74D 15%, #E1C775 25%, #EAD89D 40%, #F2E8C5 42%, #FBF8EE 42%, #F2E8C5 50%, #EAD89D 65%, #E1C775 75%, #D8B74D 85%, #D4AF37 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,13 +145,25 @@ margin: 0 40px
 .float-right{
   float: right
 }
-.content img {
+.content  img {
   height: 250px;
   width: 300px;
   margin: 25px 0px;
   object-fit: cover;
   transform: rotate(-20deg);
   bottom: 15px;
+  right: 0px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 20px 20px #00000090;
+}
+.content .pricing-inner-content img {
+  height: 450px;
+  width: 500px;
+  margin: 25px ;
+  object-fit: cover;
+  transform: rotate(0deg);
+  bottom: 0px;
   right: 0px;
   position: relative;
   z-index: 1;
@@ -181,6 +193,18 @@ margin: 0 40px
   display: inline-flex;
   align-items: center;
   width: 80%;
+  justify-content: space-between;
+  background-color: #ffffff30;
+  color: #ffffff;
+  padding: 25px;
+  margin: 25px 0;
+  flex-direction: row;
+  /* max-width: 960px; */
+}
+.pricing-inner-content {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
   background-color: #ffffff30;
   color: #ffffff;

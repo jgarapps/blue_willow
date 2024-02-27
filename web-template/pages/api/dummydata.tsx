@@ -32,7 +32,7 @@ import bobbieImg from "../../assets/aboutus/bobbie_headshot.jpg"
 
 export const slugs: any[] = [
   {
-    link: "services",
+    link: "portfolio",
   },
   
   {
@@ -41,9 +41,6 @@ export const slugs: any[] = [
   {
     link: "contact"
   },
-  {
-    link: "faqs"
-  }
 ];
 
 export const slugData = [
@@ -221,31 +218,5 @@ export const about_us = [
 }
 ]
 
-export const faqs = [
- { image: vintageBG.src,
- questions: [ {
-    question: "What are the prices?",
-    answer: "The answer"
-  },
-  {
-    question: "What can I expect?",
-    answer: "The answer"
-  },
-  {
-    question: "What should i bring?",
-    answer: "The answer"
-  },
-  {
-    question: "Who can do my hair?",
-    answer: "The answer"
-    
-  },
-  {
-    question: "I'm not sure what I want.",
-    answer: "The answer"
-    
-  },
- ]
-}
-]
+
 

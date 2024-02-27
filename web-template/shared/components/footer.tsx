@@ -12,7 +12,7 @@ export default function Footer() {
         <li>some other info</li>
         <li>
           {" "}
-          <Image src={logo} alt="logo" width={100} height={175} className="" />
+          <Image src={logo} alt="logo" width={100} height={75} className="" />
         </li> 
       </ul>
     

@@ -17,6 +17,9 @@ function Header() {
             <Link href={`/${slug.link}`}>{slug.link.replace("-", " ")}</Link>
           </li>
         ))}
+        <li>
+            <Link href={`/pricing`}>Pricing</Link>
+          </li>
       </ul></div>
     </nav>
   );
