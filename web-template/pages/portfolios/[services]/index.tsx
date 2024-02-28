@@ -13,7 +13,7 @@ export default function Service() {
   const slug = slugs?.pop().replace("/", "").replace("%20", " ").replace("-", " ")
   const slugDatas = slugData.filter((x) => x.name === slug); 
 
-  const items =[ <div>{ slugDatas[0]?.images.map((x) => <img src={x.image} width={300} alt={""} role="presentation" />)}</div>]
+  const pictures =[ <div>{ slugDatas[0]?.images.map((x) => <img src={x.image} width={300} alt={""} role="presentation" />)}</div>]
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },

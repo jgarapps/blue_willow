@@ -53,26 +53,25 @@ export const slugData = [
       { 
         image: pinup1.src,
         blurb: "Pin Up Sessions",
-        link: "pin up",
+        page: "pin up",
         
       },
       { 
         image: boudoir3.src,
         blurb: "Boudoir Sessions",
-        link: "boudoir",
+        page: "boudoir",
 
       },
       {    
         image: alt4.src,
-        blurb: "Alternative",
-        link: "alternative",
+        blurb: "Alternative Sessions",
+        page: "alternative",
 
       },
       {    
         image: glam2.src,
-        blurb: "Glam",
-        link: "glam",
-
+        blurb: "Glam Sessions",
+        page: "glam",
       }
     ] 
    

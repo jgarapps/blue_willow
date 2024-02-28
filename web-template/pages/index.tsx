@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import bobbieImg from "../assets/aboutus/bobbie_headshot.jpg"
+import glam1 from "../assets/glam/glam1.jpg"
+import boudoir1 from "../assets/boudoir/boudoir1.jpg"
+import pinup1 from "../assets/pinup/pinup1.jpg"
+import alt1 from "../assets/alternative/alt1.jpg"
 
 // import { home } from "./api/dummydata";
 import homehero from "../assets/logo/BW-logo.jpg"
@@ -17,23 +20,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <header className="header home_bg" style={{backgroundImage: `url(${homehero.src})`}}>
-       
-        </header> */}
+      <header className="header">
+        <div className="home_hero">
+        <div className="home_bg" style={{backgroundImage: `url(${pinup1.src})`}}/>
+        <div className="home_bg" style={{backgroundImage: `url(${glam1.src})`}}/>
+        <div className="home_bg" style={{backgroundImage: `url(${boudoir1.src})`}}/>
+        <div className="home_bg" style={{backgroundImage: `url(${alt1.src})`}}/>
+
+</div>
+      </header>
       <section className="content">
         <div className="home-inner-content">
           <div> San Antonio based women's empowerement photography</div>
           <div>Some other text. Will add some more text here. This is just a placeholder.</div>
-          {/* <div className="column">
-            <ul>What we offer:
-              <li>Glamour Shots</li>
-              <li>Pin Up</li>
-              <li>Boudoir</li>
-              <li>Alt - Have something else in mind?</li>
-            </ul>
-           <div className="imageWrapper"> <Image src={bobbieImg} height={150} width={150} alt={"bobbie"} /></div>
-           </div> */}
-            {/* <p>"Showing women just how utterly strikingly beautiful inside and out they really are always gets to me…." <br/>- Bobbie</p> */}
         </div> 
       </section> 
     </>

@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <footer className="footer-content">
       <ul className="footer-inner-content">
-         <li>Ready to book? <Link href={""}>Contact us! </Link></li>
-                  <Link href="#" className="fa fa-instagram"></Link>
-                  <Link href="#" className="fa fa-facebook"></Link>
-          <Link href="#" className="fa fa-youtube"></Link>
-          <Link href="#" className="fa-brands fa-tiktok"></Link>
+         <li>Ready to book? <Link href={"/contact"}>Contact us! </Link></li>
+          <Link target="_blank" href="https://www.facebook.com/bluewillowimagery" className="fab fa-facebook"></Link>
+          <Link href="#" className="fab fa-youtube"></Link>
+          <Link target="_blank" href="https://www.tiktok.com/@bluewillowimagery?_t=8kGb0fLIuXi&_r=1" className="fab fa-tiktok"></Link>
+          <Link target="_blank" href="https://www.instagram.com/bluewillowimagery/?hl=en" className="fab fa-instagram"></Link>
         <li>
           {" "}
           <Image src={logo} alt="logo" width={100} height={75} className="" />
